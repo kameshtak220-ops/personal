@@ -4,7 +4,7 @@ img {
 }
 body {
     text-align:  center; 
-    font-family: 'arial' 
-     color rgb(235, 188, 119); 
-     background: rgba(0, 238, 255, 0);
+    font-family: 'arial';  
+    color: rgb(235, 188, 119); 
+    background: rgba(0, 238, 255, 0);
 }
