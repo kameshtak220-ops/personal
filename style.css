@@ -8,12 +8,30 @@ body {
     color: rgb(0, 0, 0); 
     background-color: rgb(255, 246, 230);
    
-    .container{
-    text-align:center'
-    }
+   
 
-
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 img{ 
     width:375px
 
@@ -22,8 +40,8 @@ img{
 .navbar {
   position: fixed;
   width: 100%;
-  height: 50px; /* Small height */
-  background: #ffffff;
+  height: 54px;
+  background: #ffe2c7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,21 +51,24 @@ img{
 .top-nav { top: 0; }
 .bottom-nav { bottom: 0; }
 
-/* Horizontal Link Alignment */
 .nav-links {
-  display: flex; /* Aligns links in one horizontal line */
-  gap: 30px;
+  display: flex;
+  gap: 40px;
 }
 
 .nav-links a {
   color: rgb(255, 153, 0);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   position: relative;
-  transition: color 0.3s ease;
+  transition: color 1s ease;
+  
+  /* Slide in animation properties */
+  display: inline-block;
+  opacity: 0;
+  animation: slideIn 5s ease-out forwards;
 }
 
-/* Hover Animation: Growing Underline */
 .nav-links a::after {
   content: '';
   position: absolute;
@@ -55,7 +76,19 @@ img{
   height: 2px;
   bottom: -5px;
   left: 50%;
-  background: #ff9100; /* Animation color */
+  background: #000000;
   transition: all 0.9s ease;
-  transform: translateX(-65%);
+  transform: translateX(-50%);
+}
+
+/* Keyframes for the slide-in effect */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px); /* Starts above the final position */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Moves into the final position */
+    opacity: 1;
+  }
 }
