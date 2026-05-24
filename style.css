@@ -4,7 +4,58 @@ img {
 }
 body {
     text-align:  center; 
-    font-family: 'arial';  
-    color: rgb(235, 188, 119); 
-    background: rgba(0, 238, 255, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    color: rgb(0, 0, 0); 
+    background-color: rgb(255, 246, 230);
+   
+    .container{
+    text-align:center'
+    }
+
+
+}
+img{ 
+    width:375px
+
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 50px; /* Small height */
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.top-nav { top: 0; }
+.bottom-nav { bottom: 0; }
+
+/* Horizontal Link Alignment */
+.nav-links {
+  display: flex; /* Aligns links in one horizontal line */
+  gap: 30px;
+}
+
+.nav-links a {
+  color: rgb(255, 153, 0);
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover Animation: Growing Underline */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background: #ff9100; /* Animation color */
+  transition: all 0.9s ease;
+  transform: translateX(-65%);
 }
