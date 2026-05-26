@@ -1,5 +1,5 @@
 img {
-    width:250px
+    width:275px
 
 }
 body {
@@ -32,18 +32,14 @@ body {
 
 
 
-img{ 
-    width:375px
-
-}
 
 .navbar {
   position: fixed;
   width: 100%;
-  height: 54px;
-  background: #ffe2c7;
+  height: 53px;
+  background: #fff1e3;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   z-index: 1000;
 }
@@ -53,42 +49,31 @@ img{
 
 .nav-links {
   display: flex;
-  gap: 40px;
+  gap: 100px;
 }
 
 .nav-links a {
-  color: rgb(255, 153, 0);
-  text-decoration: none;
+  color: rgb(255, 226, 187);
   font-size: 13px;
-  position: relative;
+  position: absolute;
   transition: color 1s ease;
   
-  /* Slide in animation properties */
+  
   display: inline-block;
-  opacity: 0;
+  opacity: 100;
   animation: slideIn 5s ease-out forwards;
 }
 
 .nav-links a::after {
   content: '';
-  position: absolute;
+  position: sticky;
   width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 50%;
+  height: 3px;
+  bottom: -2px;
+  left: 60%;
   background: #000000;
   transition: all 0.9s ease;
   transform: translateX(-50%);
 }
 
-/* Keyframes for the slide-in effect */
-@keyframes slideIn {
-  0% {
-    transform: translateY(-20px); /* Starts above the final position */
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0); /* Moves into the final position */
-    opacity: 1;
-  }
-}
+
